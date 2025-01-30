@@ -11,6 +11,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
@@ -45,6 +46,9 @@ public class LoginServlet extends HttpServlet {
                         String claveHash = resultadoEmail.getString("clave");
                         // Verificar si la contraseña proporcionada coincide con la almacenada
                         if (BCrypt.checkpw(clave, claveHash)) {
+                            // Crear una sesión
+                            HttpSession session = request.getSession();
+                            session.setAttribute("email", email); // Guardar el email de usuario en la sesión
                             // Si la contraseña es correcta redirige a libros.jsp
                             request.getSession().setAttribute("mensajeExito", "Usuario logeado con éxito.");
                             response.sendRedirect("libros.jsp");

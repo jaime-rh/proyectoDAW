@@ -61,3 +61,17 @@ function calificar(titulo, autores, imagen) {
     var url = "calificar.jsp?titulo=" + titulo + "&autores=" + autores + "&imagen=" + imagen;
     window.location.href = url; // Redirigir a la página
 }
+
+// Obtener elementos de la página
+const usuario = document.getElementById("usuario");
+const navHidden = document.getElementById("navHidden");
+const cerrarSesion = document.getElementById("cerrarSesion");
+
+// Mostrar el menú desplegable cuando el ratón pase por encima del nombre del usuario
+usuario.addEventListener("click", function() {
+    navHidden.style.visibility="visible";
+});
+
+
+
+

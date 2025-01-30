@@ -12,7 +12,7 @@
     <form action="" method="post">
         <div id="contenedorCalificar">
             <div id="libroCalificar">
-                <img class="portada" id="portada"/>
+                <img class="portada" id="portadaLibro"/>
                 <h3 class="titulo" id="tituloLibro"></h3>
                 <p class="autor" id="autoresLibro"><strong>Autor/es:</strong></p>
             </div>

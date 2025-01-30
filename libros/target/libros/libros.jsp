@@ -10,6 +10,17 @@
     <title>libros</title>
 </head>
 <body>
+    <div id="cabezara">
+        <p id="logo">BLibros</p>
+        <div class="menuUsuario">
+            <span id="usuario">Usuario</span>
+            <div class="navHidden">
+                <ul>
+                    <li id="li"><a href="" id="cerrarSesion">Cerrar Sesion</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
                 <% String mensajeExito = (String) session.getAttribute("mensajeExito"); %>
 
                 <% if (mensajeExito != null) { %>

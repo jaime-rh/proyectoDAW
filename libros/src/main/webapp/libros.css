@@ -280,4 +280,44 @@ body{
     margin-top: -15px;
 }
 
+#usuario {
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+}
+#usuario:hover{
+    color: rgb(221, 221, 221);
+    font-size: 1.3em;
+    transition: 1s;
+}
+
+#navHidden{
+    width: 100%;
+    margin-left: -30px;
+    visibility: hidden;
+}
+
+#li{
+    list-style-type: none;
+}
+#cerrarSesion{
+    text-decoration: none;
+    color: white;
+}
+#cerrarSesion:hover{
+    color: rgb(221, 221, 221);
+    font-size: 1.05em;
+    transition: 1s;
+}
+
+#cabezara{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuUsuario{
+    width: 8%;
+}
+
+
 
